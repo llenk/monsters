@@ -9,3 +9,7 @@ app.listen(PORT, function() {
 });
 
 app.use(express.static('server/public'));
+
+app.get('/monsters', function(req, res) {
+    res.send(monsters);
+});
