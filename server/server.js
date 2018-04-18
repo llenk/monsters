@@ -6,4 +6,6 @@ const monsters = [ 'Big Foot', 'Loch Ness Monster', 'Mike', 'Sully' ];
 
 app.listen(PORT, function() {
     console.log(`listening on port ${PORT}`);
-})
+});
+
+app.use(express.static('server/public'));
